@@ -1,7 +1,7 @@
 # Android_login_UI
 
-<p width="100%">
-  <img src="/starter.jpg" width="50%" />
-  <img src="/signIn.jpg" width="50%" /> 
+<p>
+  <img src="/starter.jpg" width="300px" />
+  <img src="/signIn.jpg" width="300px" /> 
 </p>
 
