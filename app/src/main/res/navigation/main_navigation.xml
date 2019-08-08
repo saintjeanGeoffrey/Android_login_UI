@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main_navigation"
+            app:startDestination="@id/signInFragment">
+
+    <include app:graph="@navigation/signup_navigation" />
+
+    <fragment android:id="@+id/signInFragment" android:name="be.saintjean.loginUI.signIn.fragments.StarterFragment"
+              tools:layout="@layout/fragment_starter" android:label="starter">
+        <action android:id="@+id/action_starter_to_signIn" app:destination="@id/signInFragment2"
+                app:enterAnim="@anim/anim_slide_in_left"
+                app:exitAnim="@anim/anim_slide_out_left" app:popEnterAnim="@anim/anim_slide_in_right"
+                app:popExitAnim="@anim/anim_slide_out_right"/>
+        <action android:id="@+id/action_starter_to_signUp" app:destination="@id/signup_navigation"
+                app:enterAnim="@anim/anim_slide_in_left" app:exitAnim="@anim/anim_slide_out_left"
+                app:popEnterAnim="@anim/anim_slide_in_right" app:popExitAnim="@anim/anim_slide_out_right"/>
+    </fragment>
+    <fragment android:id="@+id/signInFragment2" android:name="be.saintjean.loginUI.signIn.fragments.SignInFragment"
+              android:label="fragment_sign_in" tools:layout="@layout/fragment_sign_in">
+        <action android:id="@+id/action_signIn_to_signUp" app:destination="@id/signup_navigation"
+                app:enterAnim="@anim/anim_slide_in_left" app:exitAnim="@anim/anim_slide_out_left"
+                app:popEnterAnim="@anim/anim_slide_in_right" app:popExitAnim="@anim/anim_slide_out_right"/>
+    </fragment>
+</navigation>

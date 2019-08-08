@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".signIn.fragments.StarterFragment"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="30dp"
+                android:background="@color/bg_signin"
+                android:gravity="bottom"
+>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:id="@+id/signIn_logo_container"
+                  android:layout_marginBottom="80dp"
+    >
+
+        <ImageView android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:src="@drawable/logo"
+        />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:id="@+id/signIn_title_container"
+                  android:layout_marginBottom="150dp"
+                  android:layout_below="@id/signIn_logo_container"
+    >
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Start"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+        />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="your"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+        />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Adventure"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
+                  android:orientation="vertical"
+                  android:id="@+id/btn_signUp_container"
+                  android:layout_below="@id/signIn_title_container"
+                  android:gravity="center_horizontal"
+    >
+
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Log in"
+                android:id="@+id/btn_signUp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:background="@drawable/button_shape_orange"
+                android:textAllCaps="false"
+                android:elevation="5dp"
+                android:translationZ="2dp"
+                android:stateListAnimator="@null"
+        />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/signup_link_container"
+                  android:layout_below="@id/btn_signUp_container"
+                  android:layout_marginTop="20dp"
+                  android:gravity="center_horizontal"
+    >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You don't have an account? "
+                android:textSize="12sp"
+                android:textColor="@color/black"
+        />
+        <TextView
+                android:id="@+id/btn_goToSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up here."
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/signup_navigation"
+            app:startDestination="@id/signUpStep1Fragment">
+
+    <fragment android:id="@+id/signUpStep1Fragment"
+              android:name="be.saintjean.loginUI.signUp.fragments.SignUpStep1Fragment"
+              android:label="fragment_sign_up_step1" tools:layout="@layout/fragment_sign_up_step1">
+        <action android:id="@+id/action_signUp1_to_signUp2"
+                app:destination="@id/signUpStep2Fragment"/>
+    </fragment>
+    <fragment android:id="@+id/signUpStep2Fragment"
+              android:name="be.saintjean.loginUI.signUp.fragments.SignUpStep2Fragment"
+              android:label="fragment_sign_up_step2" tools:layout="@layout/fragment_sign_up_step2"/>
+</navigation>
